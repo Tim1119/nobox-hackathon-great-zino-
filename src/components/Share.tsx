@@ -62,7 +62,7 @@ const Share = ({fullName,profilePhoto}:Props) => {
         <img className="w-10 h-10 rounded-full " src={profilePhoto ? profilePhoto : avatar} alt="" />
         <input 
         name='postText'
-          className="flex-1 h-full p-2 text-sm border-b border-gray-300 outline-none "
+          className="flex-1 w-full max-w-[inherit] h-full p-2 text-sm border-b border-gray-300 outline-none "
           value={formData.postText}
           onChange={handleInputChange}
           placeholder="What's on your mind?"
@@ -88,7 +88,7 @@ const Share = ({fullName,profilePhoto}:Props) => {
           <AiFillTag className="w-5 h-5 text-blue-700" />
           <span>Tag</span>
         </aside>
-        <aside className="flex items-center gap-2 p-2 text-sm rounded-md cursor-pointer hover:bg-gray-300">
+        <aside className="hidden md:inline-flex items-center gap-2 p-2 text-sm rounded-md cursor-pointer hover:bg-gray-300">
           <IoIosLocate className="w-5 h-5 text-green-500" />
           <span>Location</span>
         </aside>
