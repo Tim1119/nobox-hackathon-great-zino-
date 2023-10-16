@@ -20,7 +20,7 @@ const Navbar = ({ fullName,profilePhoto,setIsMobileSidebarOpen,isMobileSidebarOp
         <span className="lg:hidden cursor-pointer h-full" onClick={()=>setIsMobileSidebarOpen(!isMobileSidebarOpen)} >
             <FaBars className='w-6 text-white h-6 mx-2' />
           </span>
-          <span className="text-lg font-bold tracking-wide" >ZINO-SOCIAL</span>
+          <span className="text-lg font-bold tracking-wide hidden lg:inline-flex" >ZINO-SOCIAL</span>
         </section>
         <section className="hidden lg:flex items-center flex-[0.5] bg-white gap-2" >
           <HiMagnifyingGlass className="w-6 h-6 ml-2 mr-1 text-gray-400" />
@@ -29,14 +29,14 @@ const Navbar = ({ fullName,profilePhoto,setIsMobileSidebarOpen,isMobileSidebarOp
         </section>
         <section className="flex items-center gap-4">
 
-          <button className="relative inline-block">
+          <button className="relative hidden md:inline-block">
             <IoMdNotificationsOutline className=" w-7 h-7" />
 
             <span className="absolute text-xs -top-[6px] font-medium mr-1 px-1.5 py-0.5 rounded-full text-white bg-red-500 ">
               4
             </span>
           </button>
-          <button className="relative inline-block">
+          <button className="relative hidden md:inline-block">
             <BsPeople className=" w-7 h-7" />
 
             <span className="absolute text-xs -top-[6px] font-medium mr-1 px-1.5 py-0.5 rounded-full text-white bg-red-500 ">
