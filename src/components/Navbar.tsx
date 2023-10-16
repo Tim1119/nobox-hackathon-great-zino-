@@ -29,14 +29,14 @@ const Navbar = ({ fullName,profilePhoto,setIsMobileSidebarOpen,isMobileSidebarOp
         </section>
         <section className="flex items-center gap-4">
 
-          <button className="relative hidden md:inline-block">
+          <button className="relative inline-block">
             <IoMdNotificationsOutline className=" w-7 h-7" />
 
             <span className="absolute text-xs -top-[6px] font-medium mr-1 px-1.5 py-0.5 rounded-full text-white bg-red-500 ">
               4
             </span>
           </button>
-          <button className="relative hidden md:inline-block">
+          <button className="relative inline-block">
             <BsPeople className=" w-7 h-7" />
 
             <span className="absolute text-xs -top-[6px] font-medium mr-1 px-1.5 py-0.5 rounded-full text-white bg-red-500 ">
@@ -48,7 +48,7 @@ const Navbar = ({ fullName,profilePhoto,setIsMobileSidebarOpen,isMobileSidebarOp
               <img className="w-10 h-10 rounded-full" src={profilePhoto ? profilePhoto : avatarImg} alt="" />
               <span className="font-poppins bottom-0 left-8 absolute  w-2.5 h-2.5 bg-green-400 border-2 border-white dark:border-gray-800 rounded-full text-white"></span>
             </div>
-            <p className="text-base font-semibold">{fullName}</p>
+            <p className="hidden md:inlin-block text-base font-semibold">{fullName}</p>
             <HiMiniChevronDown className="w-5 h-5" />
           </div>
         </section>
