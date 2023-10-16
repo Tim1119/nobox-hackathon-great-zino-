@@ -101,7 +101,7 @@ const Post = ({post}:Props) => {
                   <div className='flex items-center gap-2' >
                       <img src={post.profilePhoto ? post.profilePhoto : avatar} className="w-10 h-10 rounded-full" alt="" />
                       <div>
-                          <h3 className="text-base font-medium" > {post?.savedPost} Ajani Timothy</h3>
+                          <h3 className="text-base font-medium" >Ajani Timothy</h3>
                           {/* <p className="text-xs text-gray-500" >{new Date(post?.createdAt).toLocaleString()} </p> */}
                           <p className="text-xs text-gray-500" > {new Date(post?.createdAt).toLocaleString()} </p>
                       </div>
