@@ -122,7 +122,7 @@ const LoginPage = ({ setAccountId,setFullName,setEmail,setProfilePhoto}:Props) =
                 Don’t have an account yet?{" "}
 
                 <Link
-                  to='/Signup'
+                  to='/signup'
                   className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
                   Sign up
